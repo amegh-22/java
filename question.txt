@@ -1,0 +1,14 @@
+write a class product with data members pcode, pname and price. create 3 objects of the product class. find the product with lowest prize.
+write a menu driven program to do matrix operations: addition, multiplication, transpose
+program to do complex number addition
+check whether a matrix is symmetric or not
+create an array and search for a particular item in the array
+perform string manipulation using function(lower case, uppercase, find the length, substrings, index of the first occurance of character in the given string)
+create a java program with a class for an employee having attributes: e_no, e_name, e_salary. Find the total salary of that employee.
+create a class employee having attributes e_no, e_name,e_salary. read n employee information/ data so that you can use an array of employees and search for an employee using the e_no(use concept of array of objects)
+{syntax for array of objects:
+    classname obj[] = new classname[n]}
+write a java program to sort a string.(using compareto())
+write a java program to calculate the area of different shapes using function overloading
+create a class employee with members employee_id, name, salary, address. Create constructors to initialize the data members. use another class, teacher that inherit the properties of class employee and contain its own data members tr_name, department, subjects and constructors to initialize these data members. include a display method to display all the data members. use array of objects to display details of n teachers.
+Create an interface having prototypes(declaration) of functions; area and perimeter. create 2 classes circle and rectangle, which implements the above interface. create a menu driven program to find area and perimeter of objects
