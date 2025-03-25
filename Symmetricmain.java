@@ -39,6 +39,21 @@ public class Symmetricmain {
         m_transpose.display();
     }
 
+    void symmetry_check(Matrix m1,Matrix m2){
+        boolean sym=true;
+        for(int i=0;i<m1.rows;i++){
+            for(int j=0;j<m1.cols;j++){
+                if(m1.data[i][j]==m2.data[i][j]){
+                    continue;
+                }
+                else{
+                    sym=false;
+                    break;
+                }
+            }
+
+        }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Matrixmain matrix=new Matrixmain();
@@ -59,5 +74,6 @@ public class Symmetricmain {
         m5.display();
         matrix.Transpose(m5);
         sc.close();
-    }
+
+}
 }
