@@ -1,4 +1,4 @@
-package Ameghaa;
+package meghaa;
 
 import java.util.Scanner;
 
