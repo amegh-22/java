@@ -1,4 +1,6 @@
 package graphics;
-interface figure{
-   public void Area();
+
+interface figure {
+   public  void area();
+    
 }

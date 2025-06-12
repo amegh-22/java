@@ -1,43 +1,32 @@
+import java.lang.*;
 import java.util.*;
 import java.io.*;
-public class file{
-   static void  file(File ff)
-    {
-        File[] file=ff.listFiles();
-        if(file!=null)
-        {
-            for(File fil:file)
-            {
-                System.out.println(fil.getName());
-                if(fil.isDirectory())
-                {
-                    file(fil);
-                }
-            }
+
+public class file {
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the file name");
+        String f = sc.nextLine();
+        File ff = new File(f);
+        if (!ff.exists()) {
+            System.out.println("file not found ,creating one");
+            FileWriter w = new FileWriter(ff);
+
+            System.out.println("Enter the contents:");
+            String con = sc.nextLine();
+            w.write(con);
+            w.close();
         }
+
+        Scanner read = new Scanner(ff);
+
+        while (read.hasNextLine()) {
+            String s = read.nextLine();
+            System.out.println(s);
+        }
+        sc.close();
+        read.close();
+
     }
+
 }
-static boolean search(File fs,String file)
-{
-    File[] list= fs.listFiles();
-    boolean flag=false;
-     if(file!=null)
-        {
-            for(File file:fileList)
-            {
-                if(file.isFile() && file.getName() equals(filename))
-                {
-                    System.out.println("Found");
-                    return true;
-                }
-                else if(file.isDirectory()){
-                    {
-                        flag=search(file, filename);
-                    }
-
-
-                }
-            }
-            return flag;
-        }
-    }
